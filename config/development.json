@@ -1,0 +1,29 @@
+{
+  "port": 2005,
+  "hostAddress": "localhost:2005",
+  "databaseHost": "localhost",
+  "databasePort": "localhost",
+  "databaseName": "bookManagement",
+  "jwtsecret": "nodejwt",
+  "jwtresetsecret": "nodejwt",
+  "jwtOptions": {
+    "expiresIn": "24h"
+  },
+  "swaggerDefinition": {
+    "info": {
+      "title": "bookManagement",
+      "version": "2.0",
+      "description": "bookManagement"
+    },
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "tokenauth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  }
+  
+ 
+}
